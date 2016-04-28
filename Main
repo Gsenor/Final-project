@@ -1,0 +1,93 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main(int argc, char* argv[])
+{
+
+    int input = 0;
+    CommunicationNetwork cn;
+
+
+    while (input!= 9)
+    {
+    cout << "======Main Menu======" << endl;
+    cout << "1. Build Network" << endl;
+    cout << "2. Print Network Path" << endl;
+    cout << "3. Transmit Message Coast-To-Coast" << endl;
+    cout << "4. Add City" << endl;
+    cout << "5. Delete City" << endl;
+    cout << "6. Count Total Cities" << endl
+    cout << "7. Count number of cities between two cities" << endl
+    cout << "8. Show path between cities" << endl
+    cout << "9. Quit" << endl;
+
+    
+        cin >> input;
+
+        // used for user input
+        string cityNew;
+        string cityPrevious;
+        string message;
+
+       
+
+            if(x = 1){
+                cn.buildNetwork();
+                cn.printNetwork();
+                }
+            else if(x= 2){
+                cn.printNetwork();
+            }
+            else if(x = 3)
+                cn.transmitMsg(argv[1]);
+                cout<<"type a return message"<<endl;
+                cn.transmitmessback(argv[1])
+                 
+                
+            else if( x= 4){
+                cout << "Enter a city name: " << endl;
+                getline(cin,cityNew);
+                cout << "Enter a previous city name: " << endl;
+                getline(cin,cityPrevious);
+                if(city2 !="First")
+                    tmp = searchNetwork(head,city2);
+                else
+                    city *tmp = NULL;
+               
+                cn.addCity(cityPrevious, cityNew);
+                }
+                else if(x = 5){
+                cout << "Enter a city name: " << endl;
+                getline(cin,cityNew);
+                cn.deleteCity(city1)
+                    
+                }
+                else if (x = 6){
+                cn.countTotalCities()
+                    
+                }
+                else if(x = 7){
+                cout << "Enter the starting city: " << endl;
+                getline(cin,cityNew);
+                cout << "Enter the end city: " << endl;
+                getline(cin,cityPrevious);
+                cn.countCitiestransit(city1, city2)
+                    
+                }
+                else if(x = 8){
+                cout << "Enter the starting city: " << endl;
+                getline(cin,cityNew);
+                cout << "Enter the end city: " << endl;
+                getline(cin,cityPrevious);
+                cn.showMailPath(city1, city2)
+                }
+          
+           
+            
+            
+        }
+        if(x = 9){
+            cout<<"GoodBye"<<endl;
+        }
+        return 0;
+    }
