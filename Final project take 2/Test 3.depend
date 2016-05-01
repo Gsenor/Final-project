@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1462056067 source:/home/user/Desktop/Test 3/main.cpp
+	<iostream>
+	<fstream>
+	"CommunicationNetwork.h"
+
+1462057629 /home/user/Desktop/Test 3/include/CommunicationNetwork.h
+	<iostream>
+
+1462057825 source:/home/user/Desktop/Test 3/src/CommunicationNetwork.cpp
+	"CommunicationNetwork.h"
+	<iostream>
+	<fstream>
+
