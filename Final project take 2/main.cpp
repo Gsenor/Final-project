@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 
-    int x = 0;
+    string x;
     CommunicationNetwork cn;
 
 
@@ -25,14 +25,14 @@ int main()
         string city1;
         string city2;
         string message;
-            if(x = 1){
+            if(x == "1"){
                 cn.buildNetwork();
                 cn.printNetwork();
                 }
-            else if(x = 2){
+            else if(x == "2"){
                 cn.printNetwork();
             }
-            else if(x = 3){
+            else if(x == "3"){
                 cout<<"Type a message"<<endl;
                 cin>>message;
                 cn.transmitMsg(message);
@@ -42,7 +42,7 @@ int main()
                 }
 
 
-            else if( x = 4){
+            else if( x == "4"){
                 cout << "Enter a city name: " << endl;
                 cin>>city1;
                 cout << "Enter a previous city name: " << endl;
@@ -50,17 +50,17 @@ int main()
 
                 cn.addCity(city2, city1);
                 }
-                else if(x = 5){
+                else if(x == "5"){
                 cout << "Enter a city name: " << endl;
                 cin>>city1;
                 cn.deleteCity(city1);
 
                 }
-                else if (x = 6){
+                else if (x == "6"){
                 cn.countTotalCities();
 
                 }
-                else if(x = 7){
+                else if(x == "7"){
                 cout << "Enter the starting city: " << endl;
                 cin>>city1;
                 cout << "Enter the end city: " << endl;
@@ -68,7 +68,7 @@ int main()
                 cn.countCitiestransit(city1, city2);
 
                 }
-                else if(x = 8){
+                else if(x == "8"){
                 cout << "Enter the starting city: " << endl;
                 cin>>city1;
                 cout << "Enter the end city: " << endl;
@@ -81,7 +81,7 @@ int main()
 
 
         }
-        if(x = 9){
+        if(x == "9"){
             cout<<"GoodBye"<<endl;
         }
         return 0;
